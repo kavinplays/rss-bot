@@ -4,7 +4,7 @@ import INDEX from "./index.svelte";
 describe("INDEX", () => {
     test("says 'hello world!'", () => {
       render(INDEX);
-    //   const node = screen.queryByText("power users");
+      const node = screen.queryByText("power users");
     //   expect(node).toBeInTheDocument();
     });
   });

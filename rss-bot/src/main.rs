@@ -73,10 +73,10 @@ async fn main() -> WebhookResult<()> {
                     .username("In Sports News!")
                     .avatar_url("https://rss-bot.kavinplays.ml/favicon.webp")
                     .embed(|embed| embed
-                        .title(&main_title)
+                        .title(&title)
                         .color("14177041")
                         .url(&link)
-                        .field(&title, &desc, false))).await?;
+                        .field(&main_title, &desc, false))).await?;
             }
         interval.tick().await;
         }
