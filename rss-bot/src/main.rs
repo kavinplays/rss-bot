@@ -5,14 +5,7 @@ use tokio::time::{self, Duration};
 
 #[tokio::main]
 async fn main() -> WebhookResult<()> {
-    let railway: bool;
-    match env::var("RAILWAY_STATIC_URL") {
-        Ok(_val) => railway = true,
-        Err(_e) => railway = false,
-    }
-    if railway == false{
-        dotenv().expect(".env file not found");
-    }
+    // dotenv().expect(".env file not found");
     let url = env::var("DISCORD_WEBHOOK").expect("Expected a token in the environment");
     let client = WebhookClient::new(&url);
     println!("Hello, world!");
