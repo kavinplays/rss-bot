@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>KavinPlays</title>
+    <title>In Sports News!</title>
 </svelte:head>
 <div class="text-gray-500 h-screen justify-center overflow-hidden">
 <center class="mt-56 m-auto">
