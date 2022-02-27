@@ -1,11 +1,15 @@
+
+<script>
+    let name = "In Sports News!";
+</script>
 <svelte:head>
-    <title>In Sports News!</title>
+    <title>{name}</title>
 </svelte:head>
 <div class="text-gray-500 h-screen justify-center overflow-hidden">
 <center class="mt-56 m-auto">
 
 <div class=" tracking-widest"><br>
-<span class="text-gray-500 text-6xl block"><span>In Sports News!</span></span><br>
+<span class="text-gray-500 text-6xl block"><span>{name}</span><br>
 <span class="text-gray-500 text-xl block">This bot allows you to get sports news directly into discord, <br>making it easily accessible to discord power users like me</span>
 </div>
 </center>
