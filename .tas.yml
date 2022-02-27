@@ -4,11 +4,11 @@ postMerge:
     - "website/**/*.test.js"
 postRun: 
   command: 
-    - "node --version"  
+    - "cd website && node --version"  
 preMerge: 
   pattern: 
     - "website/**/*.test.js"
 preRun: 
   command: 
     - cd website && npm install
-configFile: jest.config.json
+configFile: website/jest.config.json
