@@ -71,7 +71,7 @@ async fn main() -> WebhookResult<()> {
                 title = title.replace("&amp;", "");
                 client.send(|message| message
                     .username("In Sports News!")
-                    .avatar_url("https://rss-bot.kavinplays.ml/favicon.webp")
+                    .avatar_url("https://hackathon.kavinplays.ml/favicon.png")
                     .embed(|embed| embed
                         .title(&title)
                         .color("14177041")
